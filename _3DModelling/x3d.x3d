@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "https://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D profile='Immersive' version='3.3'  xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation =' https://www.web3d.org/specifications/x3d-3.3.xsd '>
+<Scene>
+	<WorldInfo title='A2_AnimatedGeoViewpoint.x3d'/>
+	<Group>
+		<!-- ROUTE information for V node:  [from GPI.geovalue_changed to set_position ] -->
+		<GeoViewpoint DEF='V' description='Animating GeoViewpoint' orientation='1 0 0 -1.57' position='51.5122 -0.065 10000000' containerField='children'/>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor='0.8 1.0 0.3'/>
+				<ImageTexture url=' "images/earth.jpg" "https://www.web3d.org/x3d/content/examples/Basic/images/earth.jpg" "http://www.geovrml.org/1.0/doc/images/earth.jpg" '/>
+			</Appearance>
+			<GeoElevationGrid creaseAngle='1.05' geoGridOrigin='-90 -180 0' xDimension='11' xSpacing='36' zDimension='11' zSpacing='18' height='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'/>
+		</Shape>
+		<!-- ROUTE information for GPI node:  [from TS.fraction_changed to set_fraction ] [from geovalue_changed to V.set_position ] -->
+		<GeoPositionInterpolator DEF='GPI' key='0.0 0.1 0.55 1.0' keyValue='51.5122 -0.065 10000000 48.865 2.35 10000000 40.6698 -73.943849 10000000 51.5122 -0.065 10000000'/>
+		<!-- ROUTE information for TS node:  [from fraction_changed to GPI.set_fraction ] -->
+		<TimeSensor DEF='TS' cycleInterval='8.0' loop='true'/>
+		<Background groundColor='0.3 0.3 0.3' skyColor='0.3 0.3 0.3'/>
+	</Group>
+	<ROUTE fromNode='TS' fromField='fraction_changed' toNode='GPI' toField='set_fraction'/>
+	<ROUTE fromNode='GPI' fromField='geovalue_changed' toNode='V' toField='set_position'/>
+</Scene>
+</X3D>

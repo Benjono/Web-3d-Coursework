@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class="h-100">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+    <!-- FancyBox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" ?
+	<!-- custom -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+
+    <title>Hello, world!</title>
+</head>
+<body id="body" class="d-flex flex-column h-100">
+    <div class="model3D">
+        <x3d>
+            <environment frustumCulling='false' lowPriorityCulling='false' occlusionCulling='false' smallFeatureCulling='false' tessellationDetailCulling='true' isActive="true"></environment>
+            <scene>
+
+                <inline nameSpaceName="model" mapDEFToID="true" url="./_3DModelling/coke_bottle.x3d"> </inline>
+
+            </scene>
+
+        </x3d>
+     </div>
+
+    <!-- My 3D App modals -->
+    <!-- Contact Modal -->
+    <!-- The Modal -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="scripts/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/2d506ca9cf.js" crossorigin="anonymous"></script>
+    <script src="scripts/js/custom.js"></script>
+    <!-- X3dom -->
+    <script type='text/javascript' src='scripts/js/x3dom.js'></script>
+    <script type='text/javascript' src="scripts/js/gallery_generator.js"></script>
+    <script type='text/javascript' src="scripts/js/getJsonData.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/js/modelInteraction.js"></script>
+</body>
+</html>
