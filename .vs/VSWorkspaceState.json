@@ -6,8 +6,9 @@
     "\\application\\assets\\x3d",
     "\\application\\js",
     "\\application\\model",
+    "\\application\\php",
     "\\model"
   ],
-  "SelectedNode": "\\application\\js\\modelInteraction.js",
+  "SelectedNode": "\\application\\js\\gallery_generator.js",
   "PreviewInSolutionExplorer": false
 }
